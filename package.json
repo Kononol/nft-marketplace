@@ -57,5 +57,10 @@
   },
   "engines": {
     "node": ">=20.18.3"
-  }
+  },
+  "dependencies": {
+  "@thirdweb-dev/react": "^3.14.3",
+  "@thirdweb-dev/sdk": "^3.14.3",
+  "@thirdweb-dev/chains": "^0.1.26"
+}
 }
