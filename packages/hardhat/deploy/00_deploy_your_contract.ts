@@ -11,9 +11,9 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
     throw new Error("Deployer account not configured");
   }
 
-  const deploymentResult = await deploy("YourContract", {
+  const deploymentResult = await deploy("NFTMarketplace", {
     from: deployer,
-    args: [deployer],
+    args: [],
     log: true,
     autoMine: true,
     // Добавляем подтверждение для живых сетей
@@ -27,9 +27,9 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   }
 
   try {
-    const yourContract = await hre.ethers.getContract<Contract>("YourContract", deployer);
+    const yourContract = await hre.ethers.getContract<Contract>("NFTMarketplace", deployer);
     console.log("✅ Contract successfully deployed at:", deploymentResult.address);
-    console.log("👋 Initial greeting:", await yourContract.greeting());
+    console.log("Your NFT name:", await yourContract.name());
   } catch (error) {
     console.error("⚠️ Contract deployment verification failed:", error);
   }
@@ -37,4 +37,4 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
 
 export default deployYourContract;
 
-deployYourContract.tags = ["YourContract"];
+deployYourContract.tags = ["NFTMarketplace"];
