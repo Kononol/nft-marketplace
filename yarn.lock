@@ -6765,6 +6765,7 @@ __metadata:
     "@types/qrcode": ^1.5.5
     "@typescript-eslint/eslint-plugin": ^8.27.0
     "@typescript-eslint/parser": ^8.27.0
+    abitype: ^1.0.8
     chai: ^4.5.0
     dotenv: ^16.4.5
     envfile: ^7.1.0
@@ -10966,7 +10967,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abitype@npm:1.0.8, abitype@npm:^1.0.6":
+"abitype@npm:1.0.8, abitype@npm:^1.0.6, abitype@npm:^1.0.8":
   version: 1.0.8
   resolution: "abitype@npm:1.0.8"
   peerDependencies:

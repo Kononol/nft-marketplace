@@ -3,7 +3,7 @@
 import { Dispatch, SetStateAction } from "react";
 import { Tuple } from "./Tuple";
 import { TupleArray } from "./TupleArray";
-import { AbiParameter } from "abitype";
+//import { AbiParameter } from "abitype";
 import {
   AddressInput,
   Bytes32Input,
